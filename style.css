@@ -1,18 +1,133 @@
+@import url('https://fonts.googleapis.com/css2? family= Oswald & display=swap');
+
+html{
+    background-color: blueviolet;
+}
 *{
-    margin:0px;
-    padding:0px;
-}
-
-#top{
-    width: 100%;
-    height: 200px;
-    background-color: #eee5e1;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
-#top img{
-    width: 450px;
-    padding: 0px 0px 0px 400px;
+
+.header{
+    background-color: rgb(23, 248, 6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo{
+    height: 90px;
+    width: auto;
+    transition: all 0.3s;
+
+}
+
+
+.header .logo img:hover{
+    transform: scale(1.2);
     
 }
 
+.header .nav-links{
+    list-style: none;
+}
+
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.header .nav-links li:hover,
+.overLay a:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: grey;
+}
+
+
+
+@media screen and (max-width: 800px){
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu{
+       display: inherit; 
+    }
+}
+
+/*nav*/
+
+.header a{
+    text-decoration: none;
+}
+
+.header .overLay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 40, 63, .95);
+    overflow: hidden;
+    transition: all 0.3 ease 0s;
+}
+
+.header .overLay .overLay-content{
+    display: flex;
+    height: 100%;               /*altura 100*/
+    flex-direction: column;     /*direccion del flex columnas*/
+    align-items: center;       /*centro los items*/
+    justify-content: center;   /*centro todo el contenido*/
+}
+
+.header .overLay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3 ease 0s;
+    font-weight: 700px;
+    color: #eceff1;
+}
+
+
+.header .overLay a:hover,
+.header .overLay a:focus{
+    color: #ffbc0e;
+
+}
+
+
+.header .overLay .close{
+    position: absolut;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+
+@media screen and (max-heigth 450px){
+    .header .overLay a{
+        font-size: 20px;
+    }
+}
+
+.header .overLay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
