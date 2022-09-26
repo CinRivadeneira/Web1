@@ -13,24 +13,21 @@ html{
 
 
 
+
 .header{
     background-color: #e2d7d7;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 150px;
     padding: 5px 10px;
 }
 
+
 .header .logo{
+    padding: 0 0 0 200px;
     cursor: pointer;
-}
-
-.header .logo{
-    height: 90px;
-    width: auto;
-    transition: all 0.3s;
-
+    transition: all 0.7s;
 }
 
 
@@ -67,6 +64,11 @@ html{
     }
     .menu{
        display: inherit; 
+    }
+    .logo img{
+        width: 200px;
+        padding: 150;
+        align-items: center;
     }
 }
 
@@ -136,7 +138,7 @@ html{
 
 
 #padre {
-    width: 100€;
+    width: 100%;
     height: 200px;
     background-color: #ada4a4;
     padding-top: 10px;
@@ -164,7 +166,6 @@ h1{
     padding: 20px 20px;
     color: aliceblue;
     background-image: url(img/fondos/3d-render-of-an-abstract-background-with-flowing-digital-particles-design.jpg);
-    padding: 15px;
     padding-top: 75px;
 }
 
@@ -172,6 +173,11 @@ h1{
     text-align: center;
     font-size: 25px;
     padding: 70px;
+    color: #042133;
+}
+
+.nosotros{
+    color: #042133;
 }
 
 
@@ -227,5 +233,78 @@ h1{
 @media (min-widht:400px) {
     .contenedor{
         grid-template-columns: repeat(2,1fr);
+    }
 }
+
+
+/* comienza inicio*/
+
+
+.introduccion{
+    text-align: center;
+    color: #042133;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+
+.cardconteiner{
+    width:100%;
+    display: flex;
+    max-width: 100px;
+}
+
+.card{
+    width: 350px;
+    height: 400px;
+    background-color: #eceff1;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+/*
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background:#eceff1;
+    box-shadow: 0 1px 10px rgna(0,0,0,0.2.);
+    cursor: default;
+    transition: all 400ms ea;
+}
+
+/*
+.cardconteiner{
+    width: 100px;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+/*
+.cardcontainer .card{
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #eceff1;
+}
+
+
 
