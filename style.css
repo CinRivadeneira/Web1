@@ -76,7 +76,8 @@ header{
 
 /*nav*/
 
-.header a{
+
+ .header a{
     text-decoration: none;
 }
 
@@ -135,18 +136,19 @@ header{
     font-size: 40px;
     top: 15px;
     right: 35px;
-}
+} 
 
 
 
 #padre {
     width: 100%;
-    height: 150px;
+    height: 400px;
     background-color: #ada4a4;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     justify-content: center;
   }
+
   .hijos {
     justify-content: center;
     width: max-content;
@@ -154,6 +156,7 @@ header{
     float: left;
     margin-right: 250px;
     margin-left: 5px;
+<<<<<<< HEAD
 
 }
     
@@ -183,6 +186,12 @@ header{
     cursor: pointer;
 }
 
+=======
+  }
+>>>>>>> 5e68dbe597f22a89d7460355ca51a2c8004bbff4
+
+
+  
 
 
  /* comienza sección quienes somos */ 
