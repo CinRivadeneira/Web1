@@ -154,9 +154,35 @@ header{
     float: left;
     margin-right: 250px;
     margin-left: 5px;
+
+}
     
     
-  }
+.ig :hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.fb :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+ 
+.tw :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.wpp :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.mail :hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 
  /* comienza sección quienes somos */ 
@@ -290,6 +316,7 @@ h1{
     cursor: default;
     transition: all 400ms ease;
     display: inline-block;
+    cursor: pointer;
 }
 
 .card:hover{
