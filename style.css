@@ -48,8 +48,8 @@ header{
 }
 
 .header .nav-links a{
-    font-size: 700;
-    color: #eceff1;
+    font-size: 25px;
+    color: #042133;
 }
 
 @media screen and (max-width: 800px){
@@ -150,9 +150,15 @@ h1{
     display: grid;
     grid-gap: 20px;
     padding: 10px;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: center;
     align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 .gallery_img{
@@ -193,11 +199,6 @@ h1{
     height: 200px;
 }
 
-@media (min-widht:400px) {
-    .contenedor{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
 
 @media screen and (max-width: 400px){
     .logohorizontal img{
@@ -219,7 +220,6 @@ h1{
 .servicios{
     display:grid;
     grid-gap: 20px;
-    padding: 10px;
     justify-items: center;
     align-items: center;
 
@@ -343,7 +343,7 @@ h1{
     width: max-content;
     height: 50px;
     float: left;
-    margin-right: 250px;
+    margin-right: 1px;
     margin-left: 90px;
     margin-top: 5px;
     display: flex;
@@ -367,11 +367,19 @@ h1{
      justify-content: space-between;
 }
 
- .footer .hijos .nav-links2 .redondo{
+ .footer .hijos .nav-links2 .redondo{    
     display: inline-block;
     width: 55px;
     height: 55px;
     border-radius: 55%;
+}
+
+#botonabajo{
+    text-decoration: none;
+    color: #042133;
+    font-size: 20px;
+    margin: 30px 10px;
+
 }
 
 #contentslider{
@@ -412,3 +420,4 @@ i{
     height: 100%;
     display: block;
 }
+
